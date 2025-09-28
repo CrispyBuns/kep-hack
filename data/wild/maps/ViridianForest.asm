@@ -1,8 +1,8 @@
 ViridianForestWildMons:
-	def_grass_wildmons 8 ; encounter rate
+	def_grass_wildmons 9 ; encounter rate
 	db  4, GENTLARVA
 	db  4, GENTLARVA
-	db  4, PIDGEY
+	db  4, KOTORA
 	db  5, CATERPIE
 	db  5, GENTLARVA
 	db  5, WEEDLE
