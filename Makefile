@@ -26,11 +26,34 @@ else
 SHA1 := sha1sum
 endif
 
-RGBDS ?=
-RGBASM  ?= $(RGBDS)rgbasm
-RGBFIX  ?= $(RGBDS)rgbfix
-RGBGFX  ?= $(RGBDS)rgbgfx
-RGBLINK ?= $(RGBDS)rgblink
+# Detect RGBDS 0.6.0 or 0.6.1 in PATH or ./rgbds folder
+RGBDS_DIR := rgbds
+
+# Check if rgbasm exists in PATH and get version
+RGBASM_PATH := $(shell command -v rgbasm 2>/dev/null)
+RGBASM_VER  := $(shell [ -n "$(RGBASM_PATH)" ] && rgbasm -V 2>/dev/null | grep -Eo 'v[0-9]+\.[0-9]+\.[0-9]+' || echo "none")
+
+# Acceptable versions
+RGBDS_OK   := v0.6.1 v0.6.0
+
+# Decide which binaries to use
+ifeq ($(filter $(RGBASM_VER),$(RGBDS_OK)),$(RGBASM_VER))
+    # Valid RGBDS in PATH
+    RGBASM := rgbasm
+    RGBLINK := rgblink
+    RGBFIX := rgbfix
+    RGBGFX := rgbgfx
+    $(info ✅ Using system RGBDS $(RGBASM_VER))
+else ifneq (,$(wildcard $(RGBDS_DIR)/rgbasm))
+    # Fallback to local rgbds directory
+    RGBASM := $(RGBDS_DIR)/rgbasm
+    RGBLINK := $(RGBDS_DIR)/rgblink
+    RGBFIX := $(RGBDS_DIR)/rgbfix
+    RGBGFX := $(RGBDS_DIR)/rgbgfx
+    $(info ⚠️  System RGBDS not suitable, using local $(RGBDS_DIR)/)
+else
+    $(error ❌ No compatible RGBDS found (need v0.6.0 or v0.6.1))
+endif
 
 
 ### Build targets
