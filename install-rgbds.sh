@@ -23,4 +23,19 @@ echo "✅ All dependencies are installed."
 mkdir -p "$RGBDS_DIR"
 
 # Download the zip file if not already downloaded
-if [ ! -f "$]()
+if [ ! -f "$ZIP_FILE" ]; then
+    echo "⬇️  Downloading RGBDS 0.6.1..."
+    curl -L -o "$ZIP_FILE" "$URL"
+else
+    echo "ℹ️  ZIP file already exists, skipping download."
+fi
+
+# Extract the zip into rgbds directory
+echo "📂 Extracting to $RGBDS_DIR/..."
+unzip -o "$ZIP_FILE" -d "$RGBDS_DIR"
+
+# Delete the zip file to save space
+echo "🗑️  Cleaning up..."
+rm -f "$ZIP_FILE"
+
+echo "🎉 Done! RGBDS is installed in '$RGBDS
