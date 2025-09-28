@@ -38,23 +38,22 @@ RGBDS_OK   := v0.6.1 v0.6.0
 
 # Decide which binaries to use
 ifeq ($(filter $(RGBASM_VER),$(RGBDS_OK)),$(RGBASM_VER))
-    # Valid RGBDS in PATH
-    RGBASM := rgbasm
+    # Valid RGBDS found in PATH
+    RGBASM  := rgbasm
     RGBLINK := rgblink
-    RGBFIX := rgbfix
-    RGBGFX := rgbgfx
-    $(info ✅ Using system RGBDS $(RGBASM_VER))
+    RGBFIX  := rgbfix
+    RGBGFX  := rgbgfx
+    $(info Using system RGBDS $(RGBASM_VER))
 else ifneq (,$(wildcard $(RGBDS_DIR)/rgbasm))
     # Fallback to local rgbds directory
-    RGBASM := $(RGBDS_DIR)/rgbasm
+    RGBASM  := $(RGBDS_DIR)/rgbasm
     RGBLINK := $(RGBDS_DIR)/rgblink
-    RGBFIX := $(RGBDS_DIR)/rgbfix
-    RGBGFX := $(RGBDS_DIR)/rgbgfx
-    $(info ⚠️  System RGBDS not suitable, using local $(RGBDS_DIR)/)
+    RGBFIX  := $(RGBDS_DIR)/rgbfix
+    RGBGFX  := $(RGBDS_DIR)/rgbgfx
+    $(info Using local RGBDS binaries in $(RGBDS_DIR)/)
 else
-    $(error ❌ No compatible RGBDS found (need v0.6.0 or v0.6.1))
+    $(error No compatible RGBDS found (need v0.6.0 or v0.6.1))
 endif
-
 
 ### Build targets
 
