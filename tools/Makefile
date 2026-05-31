@@ -12,7 +12,7 @@ ifeq ($(ARCH),x86_64)
 endif
 
 # Base safe flags
-CFLAGS := -O2 -flto -std=c11 -Wall -Wextra -pedantic $(CPU_FLAGS)
+CFLAGS := -O2 -flto -std=c11 -pedantic $(CPU_FLAGS)
 
 
 tools := \
