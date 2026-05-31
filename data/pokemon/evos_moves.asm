@@ -2287,7 +2287,7 @@ KotoraEvosMoves:
 
 GaotoraEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 36, GOROTORA
+	db EV_LEVEL, 35, GOROTORA
 	db 0
 ; Learnset
 	db 6, LEER
