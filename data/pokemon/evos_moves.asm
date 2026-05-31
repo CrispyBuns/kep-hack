@@ -578,7 +578,7 @@ TentacoolEvosMoves:
 
 GastlyEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 25, HAUNTER
+	db EV_LEVEL, 20, HAUNTER
 	db 0
 ; Learnset
 	db 27, HYPNOSIS
