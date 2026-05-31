@@ -2404,7 +2404,7 @@ NidorinaEvosMoves:
 
 GeodudeEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 23, GRAVELER
+	db EV_LEVEL, 20, GRAVELER
 	db 0
 ; Learnset
 	db 11, DEFENSE_CURL
