@@ -5,13 +5,14 @@ CC := gcc
 # CPU-specific flags
 CPU_FLAGS := -march=native -mtune=native
 
-# On MSYS2 MinGW64 (amd64), also enable AVX2
-ifeq ($(MSYSTEM),MINGW64)
+# On amd64 (x86_64), also enable AVX2
+ARCH := $(shell uname -m)
+ifeq ($(ARCH),x86_64)
   CPU_FLAGS += -mavx2
 endif
 
 # Base safe flags
-CFLAGS := -O2 -flto -std=c11 -pedantic $(CPU_FLAGS)
+CFLAGS := -O2 -flto -std=c11 -Wall -Wextra -pedantic $(CPU_FLAGS)
 
 
 tools := \
