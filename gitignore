@@ -1,0 +1,44 @@
+# compiled objects
+*.o
+
+# compiled graphics
+*.1bpp
+*.2bpp
+*.pic
+
+# compiled roms
+*.gbc
+*.gb
+*.patch
+
+# rgbds extras
+*.map
+*.sym
+
+# tool binaries
+*.exe
+
+# crash dumps (e.g. scan_includes.exe.stackdump — never commit these)
+*.stackdump
+
+# local rgbds install folder (used when system rgbds isn't available)
+rgbds/
+
+# precompiled python
+*.pyc
+*$py.class
+
+# save game files
+*.sgm
+*.sav
+*.rtc
+*.sn*
+*.sa*
+*.sg1
+
+.vscode/*
+
+# nix stuff
+.direnv
+.envrc
+result
