@@ -1,5 +1,5 @@
 Route1WildMons:
-	def_grass_wildmons 25 ; encounter rate
+	def_grass_wildmons 20 ; encounter rate
 	db  4, COINPUR
 	db  2, RATTATA
 	db  3, COINPUR
