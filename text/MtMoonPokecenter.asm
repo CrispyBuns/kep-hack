@@ -21,8 +21,8 @@ _MagikarpSalesmanText1::
 	line "there! Have I got"
 	cont "a deal for you!"
 
-	para "I revived this"
-	line "AERODACTYL myself"
+	para "I caught this"
+	line "MAGIKARP myself"
 	cont "for just ¥500!"
 	cont "What do you say?"
 	done
