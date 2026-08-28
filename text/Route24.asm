@@ -67,7 +67,7 @@ _Route24BattleText1::
 	done
 
 _Route24DamienText1::
-	text "This BLASTYKE"
+	text "This POKEMON"
 	line "is pathetic!"
 	
 	para "It couldn't beat"
