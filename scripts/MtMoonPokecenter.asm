@@ -44,7 +44,7 @@ MagikarpSalesmanText:
 	ld hl, .NoMoneyText
 	jr .printText
 .enoughMoney
-	lb bc, AERODACTYL, 15
+	lb bc, AERODACTYL, 18
 	call GivePokemon
 	jr nc, .done
 	xor a
