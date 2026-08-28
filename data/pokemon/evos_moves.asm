@@ -1964,6 +1964,7 @@ MagikarpEvosMoves:
 	db 0
 ; Learnset
 	db 15, TACKLE
+        db 17, DRAGON_RAGE
 	db 0
 
 CoinpurEvosMoves:
