@@ -15,14 +15,14 @@ _MtMoonPokecenterText3::
 	line "always in the"
 	cont "news!"
 	done
-
+	
 _MagikarpSalesmanText1::
 	text "SALESMAN: Hello,"
 	line "there! Have I got"
 	cont "a deal for you!"
 
-	para "I'll let you have"
-	line "a swell MAGIKARP"
+	para "I revived this"
+	line "AERODACTYL myself"
 	cont "for just ¥500!"
 	cont "What do you say?"
 	done
