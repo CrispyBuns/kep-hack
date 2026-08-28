@@ -2278,11 +2278,11 @@ KotoraEvosMoves:
 	db 0
 ; Learnset
 	db 6, LEER
-	db 11, ROAR
+	db 11, AGILITY
 	db 17, QUICK_ATTACK
 	db 28, BITE
 	db 34, THUNDER
-	db 43, AGILITY
+	db 43, DOUBLE_EDGE
 	db 0
 
 GaotoraEvosMoves:
@@ -2290,25 +2290,25 @@ GaotoraEvosMoves:
 	db EV_LEVEL, 35, GOROTORA
 	db 0
 ; Learnset
-	db 6, LEER
-	db 11, ROAR
-	db 23, QUICK_ATTACK
-	db 30, BITE
-	db 37, THUNDER
-	db 45, AGILITY
+        db 6, LEER
+        db 11, AGILITY
+        db 17, QUICK_ATTACK
+        db 28, BITE
+        db 34, THUNDER
+        db 43, DOUBLE_EDGE
 	db 0
 
 GorotoraEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 6, LEER
-	db 11, ROAR
-	db 23, QUICK_ATTACK
-	db 30, BITE
-	db 40, THUNDER
-	db 48, AGILITY
-	db 0
+        db 6, LEER
+        db 11, AGILITY
+        db 17, QUICK_ATTACK
+        db 28, BITE
+        db 34, THUNDER
+        db 43, DOUBLE_EDGE
+        db 0
 
 KoltaEvosMoves:
 ; Evolutions

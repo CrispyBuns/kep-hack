@@ -292,13 +292,13 @@ Route24Damian:
 	and a
 	jr nz, .asm_515d0
 	call SaveScreenTilesToBuffer1 ; prevents nickname screen corruption
-	ld a, BLASTYKE
+	ld a, SCREAM_TAIL
 	ld [wd11e], a
 	ld [wcf91], a
 	call GetMonName
 	ld a, $1
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
-	lb bc, BLASTYKE, 15
+	lb bc, SCREAM_TAIL, 15
 	call GivePokemon
 	jp nc, .fullParty
 	ld a, [wAddedToParty]
