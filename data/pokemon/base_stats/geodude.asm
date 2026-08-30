@@ -10,7 +10,7 @@
 	INCBIN "gfx/pokemon/front/geodude.pic", 0, 1 ; sprite dimensions
 	dw GeodudePicFront, GeodudePicBack
 
-	db ROCK_SLIDE, BIDE, NO_MOVE, NO_MOVE ; level 1 learnset
+	db ROCK_SLIDE, COMET_PUNCH, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
