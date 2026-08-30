@@ -2086,7 +2086,7 @@ PersianEvosMoves:
 	db 35, SCREECH
 	db 40, SLASH
 	db 45, DOUBLE_TEAM
-	db 0
+	db 50, PAY_DAY
 
 MarowakEvosMoves:
 ; Evolutions
