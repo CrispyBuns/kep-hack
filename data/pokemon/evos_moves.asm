@@ -2297,7 +2297,7 @@ GaotoraEvosMoves:
         db 28, BITE
         db 34, THUNDER
         db 43, DOUBLE_EDGE
-	db 0
+	db 45, DOUBLE_TEAM
 
 GorotoraEvosMoves:
 ; Evolutions
