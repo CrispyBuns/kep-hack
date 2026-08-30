@@ -2779,7 +2779,7 @@ UmbreonEvosMoves:
 	db 36, FAKE_TEARS
 	db 42, TAKE_DOWN
 	db 52, FALSE_SURRENDER
-	db 0
+	db 55, DOUBLE_TEAM
 	
 LeafeonEvosMoves:
 ; Evolutions
